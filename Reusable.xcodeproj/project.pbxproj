@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4179EADE2162195E0004D29B /* Reusable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4179EADC2162195E0004D29B /* Reusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4179EAE821621EBC0004D29B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179EAE421621EBC0004D29B /* Reusable.swift */; };
+		4179EAE921621EBC0004D29B /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179EAE521621EBC0004D29B /* UITableViewCellExtension.swift */; };
+		4179EAEA21621EBC0004D29B /* UITableViewHeaderFooterViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179EAE621621EBC0004D29B /* UITableViewHeaderFooterViewExtension.swift */; };
+		4179EAEB21621EBC0004D29B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179EAE721621EBC0004D29B /* UITableViewExtension.swift */; };
+		4179EB16216255750004D29B /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179EB14216255750004D29B /* UICollectionViewCellExtension.swift */; };
+		4179EB17216255750004D29B /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179EB15216255750004D29B /* UICollectionViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4179EAD92162195E0004D29B /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4179EADC2162195E0004D29B /* Reusable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reusable.h; sourceTree = "<group>"; };
 		4179EADD2162195E0004D29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4179EAE421621EBC0004D29B /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		4179EAE521621EBC0004D29B /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		4179EAE621621EBC0004D29B /* UITableViewHeaderFooterViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterViewExtension.swift; sourceTree = "<group>"; };
+		4179EAE721621EBC0004D29B /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		4179EB14216255750004D29B /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
+		4179EB15216255750004D29B /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,12 @@
 		4179EADB2162195E0004D29B /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				4179EAE421621EBC0004D29B /* Reusable.swift */,
+				4179EB14216255750004D29B /* UICollectionViewCellExtension.swift */,
+				4179EB15216255750004D29B /* UICollectionViewExtension.swift */,
+				4179EAE521621EBC0004D29B /* UITableViewCellExtension.swift */,
+				4179EAE721621EBC0004D29B /* UITableViewExtension.swift */,
+				4179EAE621621EBC0004D29B /* UITableViewHeaderFooterViewExtension.swift */,
 				4179EADC2162195E0004D29B /* Reusable.h */,
 				4179EADD2162195E0004D29B /* Info.plist */,
 			);
@@ -95,6 +113,7 @@
 				TargetAttributes = {
 					4179EAD82162195E0004D29B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4179EAEA21621EBC0004D29B /* UITableViewHeaderFooterViewExtension.swift in Sources */,
+				4179EB16216255750004D29B /* UICollectionViewCellExtension.swift in Sources */,
+				4179EAE821621EBC0004D29B /* Reusable.swift in Sources */,
+				4179EAE921621EBC0004D29B /* UITableViewCellExtension.swift in Sources */,
+				4179EB17216255750004D29B /* UICollectionViewExtension.swift in Sources */,
+				4179EAEB21621EBC0004D29B /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +286,7 @@
 		4179EAE22162195E0004D29B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.pharos-solutions.Reusable";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +312,7 @@
 		4179EAE32162195E0004D29B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
