@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-extension UITableViewCell: Reusable {
+public extension UITableViewCell: Reusable {
     
 }

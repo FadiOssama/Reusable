@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-extension UITableView {
-    public func dequeueReusableCell<T: Reusable>(indexPath: IndexPath) -> T! {
+public extension UITableView {
+    final func dequeueReusableCell<T: Reusable>(indexPath: IndexPath) -> T! {
         return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath as IndexPath) as? T ?? nil
     }
     
-    public func dequeueReusableHeaderFooterView<T: Reusable>() -> T! {
+    final func dequeueReusableHeaderFooterView<T: Reusable>() -> T! {
         return self.dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as? T ?? nil
     }
 }
