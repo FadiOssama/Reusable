@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-protocol Reusable: class {
+public protocol Reusable: class {
     static var reuseIdentifier: String { get }
     static var nib: UINib? { get }
 }
 
 extension Reusable {
-    static var reuseIdentifier: String { return "\(self)" }
-    static var nib: UINib? { return nil }
+    public static var reuseIdentifier: String { return "\(self)" }
+    public static var nib: UINib? { return nil }
 }

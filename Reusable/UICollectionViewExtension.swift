@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UICollectionView {
-    func dequeueReusableCell<T: Reusable>(indexPath: IndexPath) -> T! {
+    public func dequeueReusableCell<T: Reusable>(indexPath: IndexPath) -> T! {
         return self.dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath as IndexPath) as? T ?? nil
     }
 }
