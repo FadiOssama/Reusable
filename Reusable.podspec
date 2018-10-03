@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Reusable"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Reuse tableview cell or collection view cell without indicating the reuse identifier by just telling the compiler the type of the cell instead of inferring it"
 
   # This description is used to generate tags and improve search results.
